@@ -1,63 +1,67 @@
-🎬 Movie Recommendation System 🍿
+# 🎬 Movie Recommendation System 🍿
 
 This is a Flask-based web application that provides movie recommendations based on similarity scores. The system takes a movie name as input and suggests similar movies using preprocessed data.
 
-🚀 Features
+## 🚀 Features
+- 🔍 Enter a movie name to get recommendations
+- 🤖 Uses a similarity matrix for recommendations
+- 🎞️ Displays top 10 similar movies
+- 🖥️ User-friendly interface with error handling
 
-🔍 Enter a movie name to get recommendations
+## 🛠 Tech Stack
+- **🖥 Backend:** Flask (Python)
+- **🎨 Frontend:** HTML, CSS (Jinja2 templating)
+- **📊 Data Handling:** Pandas, Pickle
 
-🤖 Uses a similarity matrix for recommendations
-
-🎞️ Displays top 10 similar movies
-
-🖥️ User-friendly interface with error handling
-
-🛠 Tech Stack
-
-🖥 Backend: Flask (Python)
-
-🎨 Frontend: HTML, CSS (Jinja2 templating)
-
-📊 Data Handling: Pandas, Pickle
-
-📥 Installation
-
-1️⃣ Clone the Repository
-
-2️⃣ Install Dependencies
-
+## 📥 Installation
+### 1️⃣ Clone the Repository
+```sh
+git clone https://github.com/your-username/movie-recommendation-system.git
+cd movie-recommendation-system
+```
+### 2️⃣ Install Dependencies
 Make sure you have Python installed, then run:
+```sh
+pip install -r requirements.txt
+```
+### 3️⃣ Generate Similarity Matrix 🔄
+Run the following script to generate `similarity.pkl` before starting the application:
+```sh
+python generate_recommendations.py
+```
+### 4️⃣ Run the Application ▶️
+```sh
+python app.py
+```
+Open your browser and go to `http://127.0.0.1:5000/` to access the app.
 
-3️⃣ Generate the Similarity Matrix 🛠️
-
-Before running the app, you need to generate similarity.pkl by executing:
-
-This ensures that the required similarity matrix is available.
-
-4️⃣ Run the Application 🎬
-
-Open your browser and go to http://127.0.0.1:5000/ to access the app.
-
-🌍 Deployment
-
+## 🌍 Deployment
 This project is deployed on Render (or any hosting service you used). You can access it here:
-🎥 Live Demo
+[🎥 Live Demo](https://movie-recommendation-system-ml-1-66bo.onrender.com)
 
-📂 File Structure 📁
+## 📂 File Structure 📁
+```
+📁 movie-recommendation-system/
+├── 📜 app.py                # Main Flask application
+├── 📜 generate_recommendations.py  # Script to create similarity.pkl
+├── 📄 movies.csv            # Movie dataset
+├── 🗂️ similarity.pkl        # Precomputed similarity matrix
+├── 📁 templates/
+│   ├── 📝 index.html        # Frontend template
+├── 📁 static/
+│   ├── 🎨 styles.css        # CSS for styling (if any)
+├── 📜 requirements.txt      # Dependencies
+├── 📖 README.md             # Project documentation
+```
 
-⚠️ Notes ⚠️
+## ⚠️ Notes ⚠️
+- Ensure that `movies.csv` is present before running the script.
+- Run `generate_recommendations.py` first to create `similarity.pkl`.
+- If you face errors related to missing files, upload them manually or ensure they are in the correct location.
 
-Ensure that movies.csv is present before running generate_recommendations.py.
+## 👥 Contributors
+- **🙋‍♂️ Your Name** - Developer
 
-If similarity.pkl is missing, rerun generate_recommendations.py before starting app.py.
-
-If you face errors related to missing files, manually upload them to your hosting service.
-
-👥 Contributors
-
-🙋‍♂️ Your Name - Developer
-
-📜 License 📄
-
-This project is open-source and available under the MIT License.
+## 📜 License 📜
+This project is open-source and available under the [MIT License](LICENSE).
 
