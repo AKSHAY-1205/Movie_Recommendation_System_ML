@@ -16,7 +16,7 @@ This is a Flask-based web application that provides movie recommendations based 
 ## 📥 Installation
 ### 1️⃣ Clone the Repository
 ```sh
-git clone https://github.com/your-username/movie-recommendation-system.git
+git clone [https://github.com/AKSHAY-1205/Movie_Recommendation_System_ML.git]
 cd movie-recommendation-system
 ```
 ### 2️⃣ Install Dependencies
